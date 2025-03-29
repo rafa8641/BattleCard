@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(#F3BD7A, #C0622C);
+    width: 100vw;
+    height: 100vh;
+}   
+
+
+/* Vitoria  */
+.container_vitoria{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    gap: 25px;
+}
+
+.box_vitoria{
+    display: flex;
+}
+
+.box_vitoria .mensagem_vitoria{
+    width: 700px;
+	height: 250px;
+	line-height: 250px;
+	font-size: 4em;
+	font-family: sans-serif;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box_vitoria .mensagem_vitoria:first-child {
+	background-color: #C0622C;
+	color: #260101;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box_vitoria .mensagem_vitoria:last-child {
+	background-color: #D4864B;
+	color: #F3BD7A;
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box_vitoria .mensagem_vitoria span {
+	position: absolute;
+	animation: marquee 5s linear infinite;
+}
+
+.box_vitoria .mensagem_vitoria:first-child span {
+	animation-delay: 2.5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
+
+#my-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+}
+
+.btn_jogardnv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 204px;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(#C0622C, #5A2E15);
+    color: #F3BD7A;
+    transition: all .5s ease 0s; 
+    box-shadow: 0 10px #5A2E15;
+    text-decoration: none;
+    font-family: "Pirata One", system-ui;
+    font-size: 32px;
+  }
+  
+  .btn_jogardnv:hover{
+  box-shadow: inset 0 0 0 .25rem #2601012d;
+  }
+  
+  .btn_jogardnv span{
+    display: inline-block;
+    position: relative;
+    transition: all .5s ease;
+  }
+  
+  
