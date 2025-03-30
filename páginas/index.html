@@ -11,15 +11,39 @@
         <div class="line"></div>
         <h1>Battle Card</h1>
         <div class="line"></div>
-        <a href="vitoria.html">Vitoria</a>
     </header>
 
     <main>
-        <button class="random_cards" onclick="randomCards()">Sortear Cartas</button>
 
         <div class="card_container_jog">
-
+            <div class="card_num"><p>1</p></div>
+            <div class="card_frente_fundo">
+                
+                <h2>Leopoldo</h2>
+                <img src="../imagens/exemplo.png" alt="imagem persongagem">
+                <div class="container_info">
+                    <h3>O Bardo</h3>
+                    <div class="line_card_container">
+                        <div class="line" id="line_card"></div>
+                    </div>
+                    <ul>
+                        <li>Força: </li>
+                        <li>Magia: </li>
+                        <li>Constituição: </li>
+                        <li>Destreza: </li>
+                        <li>Inteligência: </li>
+                        <li>Carisma: </li>
+                    </ul>
+                </div>
+                 
+            </div>
+            <div class="card_num"><p>1</p></div>
         </div>
+
+        <button class="btn" onclick="randomCards()">
+            <span>Sortear Cartas</span>
+        </button>
+
 
         <div class="placar_container">
 
@@ -27,7 +51,9 @@
 
         <p>Escolha o seu atributo</p>
 
-        <button class="play">Jogar</button>
+        <button class="btn">
+            <span>Jogar</span>
+        </button>
 
         <div class="card_container_maq">
 

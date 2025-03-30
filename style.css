@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
 
 *{
     margin: 0;
@@ -9,10 +9,58 @@ body{
     background: linear-gradient(#F3BD7A, #C0622C);
     width: 100vw;
     height: 100vh;
-}   
+}
+
+/* Titulo */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+h1{
+    font-family: "Pirata One", system-ui;
+    font-size: 64px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #5A2E15;
+    color: #260101;
+    position: relative;
+}
+
+.line{
+    width:300px;
+	height: 2px;
+    background-color: #5A2E15;
+    position: relative;
+}
+
+
+.line::before, .line::after {
+    content: "";
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: #5A2E15;
+    width: 6px;
+    height: 6px;
+}
+
+.line::before {
+    left: -4px;
+    top: -2px;
+}
+
+.line::after {
+    right: -4px;
+    top: -2px;
+}
+
 
 
 /* Vitoria  */
+
 .container_vitoria{
     display: flex;
     flex-direction: column;
@@ -32,7 +80,7 @@ body{
 	height: 250px;
 	line-height: 250px;
 	font-size: 4em;
-	font-family: sans-serif;
+	font-family: "Platypi", serif;
 	font-weight: bold;
 	white-space: nowrap;
 	overflow: hidden;
@@ -80,12 +128,18 @@ body{
     height: 100vh; 
 }
 
-.btn_jogardnv{
+/* Botões */
+
+a{
+    text-decoration: none;
+}
+
+.btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 204px;
-    padding: 1rem;
+    width: fit-content;
+    padding: 15px;
     border-radius: 1.5rem;
     background: linear-gradient(#C0622C, #5A2E15);
     color: #F3BD7A;
@@ -94,16 +148,105 @@ body{
     text-decoration: none;
     font-family: "Pirata One", system-ui;
     font-size: 32px;
+    border-style: none;
+    margin: 10px;
   }
   
-  .btn_jogardnv:hover{
+  .btn:hover{
   box-shadow: inset 0 0 0 .25rem #2601012d;
   }
   
-  .btn_jogardnv span{
+  .btn span{
     display: inline-block;
     position: relative;
     transition: all .5s ease;
   }
-  
-  
+
+
+/* Carta Frente */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_container_jog{
+    width: 235px;
+    height: 350px;
+    background-color: #5A2E15;
+    font-family: "Pirata One", system-ui;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #260101;
+}
+
+.card_frente_fundo{
+    background-color: #D4864B;
+    width: 210px;
+    height: 327px;
+    border-radius: 10px;
+}
+
+.card_num{
+    width: 62px;
+    height: 62px;
+    background-color: #5A2E15;
+    border-radius: 10px;
+    color: #D4864B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    position: absolute;
+}
+
+.card_num:first-of-type { 
+    top: 0px;
+    left: 0px;
+}
+
+.card_num:last-of-type { 
+    bottom: 0px;
+    right: 0px;
+}
+
+h2{
+    font-size: 32px;
+    padding-left: 62px;
+}
+
+img{
+    width: 200px;
+    height: 170px;
+}
+
+h3{
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+ul{
+    padding-left: 25px;
+    font-size: 11px;
+    font-family: "Platypi", serif;
+}
+
+#line_card{
+    width: 180px;
+    padding-left: 15px;
+}
+
+.line_card_container{
+    display: flex;
+    justify-content: center;
+}
+
+.container_info{
+    background-color: #D4864B;
+    width: 210px;
+    height: 100px;
+}
